@@ -48,7 +48,7 @@ class assestModal extends React.Component {
         >
           <p>{this.state.data.name}</p>
           <p>{this.state.data.id}</p>
-          <p>{this.state.data.name}</p>
+          <p>{this.state.data.fbxUrl}</p>
         </Modal>
       </div>
     );
