@@ -3,6 +3,8 @@ import './App.css';
 import { useState } from 'react';
 import Assest from './view/assest-view/assest-view';
 import AssestModal from './view/assest-view/modal-popup';
+
+
 const App = () => {
   return (
     <>
@@ -11,6 +13,10 @@ const App = () => {
       </Button> */}
       <Assest></Assest>
       <AssestModal></AssestModal>
+      
+      <div id="canvas-container">
+      </div>
+      
     </>
   );
 };

@@ -2,6 +2,7 @@ import { Modal, Button } from 'antd';
 import React from 'react';
 
 import store from '../../store/store';
+import FbxModel from '../../components/fbxmodel/model'
 class assestModal extends React.Component {
   state = { visible: store.getState().visable,data: store.getState().modalData};
   componentDidMount() {
@@ -46,9 +47,7 @@ class assestModal extends React.Component {
           onOk={this.handleOk}
           onCancel={this.handleCancel}
         >
-          <p>{this.state.data.name}</p>
-          <p>{this.state.data.id}</p>
-          <p>{this.state.data.fbxUrl}</p>
+          <FbxModel> </FbxModel>
         </Modal>
       </div>
     );
