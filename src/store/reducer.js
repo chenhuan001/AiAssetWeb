@@ -1,13 +1,19 @@
-import { visable } from "./constants"
+import { visable,modal } from "./constants"
 
 const initialState = {
-  counter: 10
+  visable: false,
+  modalData:{
+
+  }
 }
 
 export default function reducer(state = initialState, action) {
+  console.log(action,'action',visable)
   switch(action.type) {
     case visable:
-      return {...state, counter: state.counter + action.num}
+      return {...state, visable: action.visable}
+      case modal:
+      return {...state, modalData: action.modalData}
     default: 
       return state
   }
